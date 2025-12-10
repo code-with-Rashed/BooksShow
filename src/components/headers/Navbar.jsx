@@ -3,13 +3,13 @@ import { NavLink } from "react-router"
 export default function Navbar() {
     const links = <>
         <li>
-            <NavLink to="/booksShow" className={({ isActive }) => isActive ? "btn btn-outline btn-success" : ""}>Home</NavLink>
+            <NavLink to="/" className={({ isActive }) => isActive ? "btn btn-outline btn-success" : ""}>Home</NavLink>
         </li>
         <li>
-            <NavLink to="/booksShow/listed-books" className={({ isActive }) => isActive ? "btn btn-outline btn-success" : ""}>Listed Books</NavLink>
+            <NavLink to="/listed-books" className={({ isActive }) => isActive ? "btn btn-outline btn-success" : ""}>Listed Books</NavLink>
         </li>
         <li>
-            <NavLink to="/booksShow/pages-to-read" className={({ isActive }) => isActive ? "btn btn-outline btn-success" : ""}>Pages to Read</NavLink>
+            <NavLink to="/pages-to-read" className={({ isActive }) => isActive ? "btn btn-outline btn-success" : ""}>Pages to Read</NavLink>
         </li>
     </>
     return (
@@ -26,7 +26,7 @@ export default function Navbar() {
                             {links}
                         </ul>
                     </div>
-                    <NavLink className="btn btn-ghost text-xl font-bold" to="/booksShow">Boi Poka</NavLink>
+                    <NavLink className="btn btn-ghost text-xl font-bold" to="/">Boi Poka</NavLink>
 
                 </div>
                 <div className="navbar-center hidden lg:flex">
