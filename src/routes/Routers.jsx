@@ -8,7 +8,7 @@ import PagesToRead from "../pages/books/PagesToRead";
 
 const Routers = createBrowserRouter([
     {
-        path: "/",
+        path: "/BooksShow",
         Component: Root,
         errorElement: <PageNotFound></PageNotFound>,
         children: [
